@@ -1,16 +1,18 @@
 package calculator.test;
 
+import org.apache.log4j.Logger;
+
 /**
  * Concole calculator *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println(sum(2, 3));
-        System.out.println(sub(2, 3));
-        System.out.println(div(2, 3));
-        System.out.println(mult(2, 3));
+public class App {
+    private static final Logger logger =Logger.getLogger(App.class);
+    public static void main(String[] args) {
+
+        logger.info(sum(2, 3));
+        logger.info(sub(2, 3));
+        logger.info(div(2, 3));
+        logger.info(mult(2, 3));
 
     }
 
